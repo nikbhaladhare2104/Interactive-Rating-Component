@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  font-family: 'Overpass', sans-serif;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--Very-Dark-Blue);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --Orange: hsl(25, 97%, 53%);
+
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+--Card-blue: hsl(216, 22%, 14%);
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+  background-color: var(--Card-blue);
+  border-radius: 1.5rem;
+  width: 380px;
+}
+.star-img {
+  background-color: var(--Dark-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+.desc {
+  font-size: 14px;
+  color: var(--Light-Grey);
+  margin-bottom: 1.5rem;
+}
+.rating-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem
+}
+.rating-item {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Dark-Blue);
+  border-radius: 50%;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.rating-item:hover{
+  background-color: var(--Orange);
+  color: var(--Very-Dark-Blue)
+}
+.btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
+  background-color: var(--Orange);
+  border-radius: 2rem;
+  font-weight: 800;
+  color: var(--Very-Dark-Blue);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--White);
+}
+.thanks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thank-img {
+  width: 45%;
+  height: 45%;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.selected-rating {
+  display: flex;
+  padding: 4px 1.5rem;
+  align-items: center;
+  background-color: var(--Dark-Blue);
+  font-size: 15px;
+  border-radius: 2rem;
+  color: var(--Orange);
+  margin: 1.5rem 0;
+  font-weight: 300;
+}
+.thanks-desc {
+  text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    height: 100vh;
+    width: 100%;
+    padding: 1.2rem;
+  }
+}
